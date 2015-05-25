@@ -5,7 +5,7 @@ This great COOP Mission for ARMA3 was original developed by giallustio.
 See http://www.giallustio.altervista.org/pages/=BTC=_Hearts_and_Minds.php for more details.
 
 
-This branch will add ACE3 to replace some mission coded functions and German vehicle units.
+This branch will add ACE3 Support (to replace some mission coded functions) and German vehicle units.
 
 
 Dependency:
