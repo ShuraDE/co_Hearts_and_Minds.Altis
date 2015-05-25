@@ -125,7 +125,7 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					description="Squad Leader";
+					description="Explosive Specialist";
 					syncId=3;
 					synchronizations[]={0,3};
 				};
