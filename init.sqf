@@ -88,3 +88,22 @@ if (btc_debug) then
 	btc_marker_debug_cond = true;
 	[] spawn btc_fnc_marker_debug;
 };
+
+//von Simmax CQB geklaut, thx simmax :D
+waituntil {!isnil "bis_fnc_init"}; 																	// Indikator gibt aus das alle bis BIS Funktionen fertig geladen sind  
+S_INIT = false;  																					// Variablen deklariert
+S_CLIENT = false; 
+if(isServer) then {S_INIT = true;}
+else
+{
+	S_CLIENT = true;
+	if(isNull player)then
+	{
+		[] spawn {waitUntil {!isNull player}; S_INIT = true;}
+	} else {
+		S_INIT = true;  																			// erst wenn Player auf Karte wird init.sqf weitergelden
+	};
+};
+waitUntil{S_INIT};
+
+call compile preprocessFile "fnc\addACEMenuEntry.sqf";												//Generierung der ACE Menüeinträge
