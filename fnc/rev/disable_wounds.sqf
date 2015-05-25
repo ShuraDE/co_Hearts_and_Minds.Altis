@@ -1,0 +1,1 @@
+BTC_wounds_disabled = true;
