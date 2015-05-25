@@ -60,7 +60,8 @@ class Params
 	//paramsArray[1]
         title = "Enemy type:";
 		values[]={0,1}; 
-		texts[]={"Guerrilla (A3)","CAF"}; 
+		//texts[]={"Guerrilla (A3)","CAF"}; 
+		texts[]={"Guerrilla (A3)"}; 
 		default = 0; 
 	};
 	class btc_p_ied
@@ -116,15 +117,17 @@ class Params
 	//paramsArray[8]
         title = "Medical system:";
 		values[]={0,1,2}; 
-		texts[]={"Disable", "No revive", "Revive"}; 
-		default = 2; 
+		//texts[]={"Disable", "No revive", "Revive"}; 
+		texts[]={"Disable"}; 
+		default = 0; 
 	};
     class btc_p_t_revive
     {
 	//paramsArray[9]
         title = "Revive time:";
 		values[]={120,180,300,600,9999}; 
-		texts[]={"2 min", "3 min", "5 min", "10 min", "No limit"}; 
+		//texts[]={"2 min", "3 min", "5 min", "10 min", "No limit"}; 
+		texts[]={"by ACE 3"}; 
 		default = 9999; 
 	};
     class btc_p_medic
@@ -148,8 +151,9 @@ class Params
 	//paramsArray[12]
         title = "Deafness:";
 		values[]={0,1}; 
-		texts[]={"No","Yes"}; 
-		default = 1; 
+		//texts[]={"No","Yes"}; 
+		texts[]={"No"}; 
+		default = 0; 
 	};
     class btc_p_redeploy
     {
