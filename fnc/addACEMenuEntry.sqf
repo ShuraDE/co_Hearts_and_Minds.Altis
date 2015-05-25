@@ -62,12 +62,14 @@
  //_actionIntelSearch = ["SearchIntel", "Search for Intel", "", {btc_int_target = cursorTarget; [] spawn btc_fnc_info_search_for_intel}, {(!Alive cursorTarget);}] call ace_interact_menu_fnc_createAction;
  _actionIntelSearch = ["SearchIntel", "Search for Intel", "", {btc_int_target = cursorTarget; [] spawn btc_fnc_info_search_for_intel}, {true;}] call ace_interact_menu_fnc_createAction;
  [typeOf cursorTarget, 0, ["ACE_MainActions"], _actionIntelSearch] call ace_interact_menu_fnc_addActionToClass;
- //[cursorTarget, 0, ["ACE_MainActions"],_actionIntelSearch] call ace_interact_menu_fnc_addActionToObject;
+ //[(this select 0), 0, ["ACE_MainActions"],_actionIntelSearch] call ace_interact_menu_fnc_addActionToObject;
+ 
+ 
  //Add Ask Intel (civilians)
  //_actionIntelAsk = ["AskIntel", "Ask for Intel", "", {cursorTarget spawn btc_fnc_info_ask;}, {(side cursorTarget == civilian && {cursorTarget isKindOf 'Civilian_F'} && Alive cursorTarget);}] call ace_interact_menu_fnc_createAction;
  _actionIntelAsk = ["AskIntel", "Ask for Intel", "", {btc_int_target = cursorTarget; [] spawn btc_fnc_info_ask;}, {true;}] call ace_interact_menu_fnc_createAction;
  [typeOf cursorTarget, 0, ["ACE_MainActions"], _actionIntelAsk] call ace_interact_menu_fnc_addActionToClass;
- //[cursorTarget, 0, ["ACE_MainActions"],_actionIntelSearch] call ace_interact_menu_fnc_addActionToObject;
+ //["Civilian_F", 0, ["ACE_MainActions"],_actionIntelSearch] call ace_interact_menu_fnc_addActionToObject;
  
 
 

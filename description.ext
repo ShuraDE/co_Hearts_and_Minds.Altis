@@ -184,3 +184,11 @@ class CfgFunctions
         };
     };
 };  
+
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class MissionActions {
+            clientInit  = "[(_this select 0), 0, ['ACE_MainActions'], (['AskIntel', 'Ask for Intel', '', {btc_int_target = cursorTarget; [] spawn btc_fnc_info_ask;}, {(side _target == civilian && {_target isKindOf 'Civilian_F'} && Alive _target);}] call ace_interact_menu_fnc_createAction;)] call ace_interact_menu_fnc_addActionToObject;";
+        };
+    };
+};

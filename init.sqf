@@ -110,4 +110,4 @@ else
 };
 waitUntil{S_INIT};
 
-call compile preprocessFile "fnc\addACEMenuEntry.sqf";												//Generierung der ACE Menüeinträge
+//call compile preprocessFile "fnc\addACEMenuEntry.sqf";												//Generierung der ACE Menüeinträge
