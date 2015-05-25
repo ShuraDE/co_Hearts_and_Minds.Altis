@@ -24,6 +24,7 @@ if (isServer) then
 
 if (!isDedicated) then 
 {
+/*
 	[] spawn
 	{
 		if (count (actionKeys "User1") == 0 || count (actionKeys "User2") == 0) then
@@ -36,7 +37,7 @@ if (!isDedicated) then
 			hintSilent "";
 		};
 	};
-
+*/
 	[] execVM "doc.sqf";
 	
 	[] spawn 
