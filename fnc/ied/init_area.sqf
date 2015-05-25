@@ -67,6 +67,7 @@ for "_i" from 1 to _n do
 
 _active = false;
 
+
 for "_i" from 1 to _n do
 {
 	private ["_sel_pos"];
@@ -108,5 +109,8 @@ for "_i" from 1 to _n do
 
 	_array pushBack [_sel_pos,_type_ied,_dir,_active];
 };
+
+
+
 
 _city setVariable ["ieds",_array];
