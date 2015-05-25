@@ -93,7 +93,11 @@ if (btc_debug) then
 waituntil {!isnil "bis_fnc_init"}; 																	// Indikator gibt aus das alle bis BIS Funktionen fertig geladen sind  
 S_INIT = false;  																					// Variablen deklariert
 S_CLIENT = false; 
-if(isServer) then {S_INIT = true;}
+
+if(isServer) then 
+{
+	S_INIT = true;
+}
 else
 {
 	S_CLIENT = true;

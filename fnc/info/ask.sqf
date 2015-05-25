@@ -1,5 +1,6 @@
 if (isNil {player getVariable "interpreter"}) exitWith {hint "I can't understand what is saying";};
 
+
 _man = btc_int_target;
 if (!isNil {_man getVariable "btc_already_asked"}) exitWith {hint format ["%1 I already answered to your question!", name _man];};
 _man setVariable ["btc_already_asked",true];
