@@ -45,8 +45,8 @@ class Mission
 	randomSeed=6599878;
 	class Intel
 	{
-		briefingName="=BTC= co 22 HEARTS AND MINDS edit";
-		overviewText="by Giallustio";
+		briefingName="=BTC= co 22 HEARTS AND MINDS, ACE Edit";
+		overviewText="by Giallustio modified by Shura";
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
