@@ -73,7 +73,7 @@ else
 	};
 };
 
-if (_city getVariable ["spawn_more",false]) then
+if (_city getVariable ["spawn_more",true]) then
 {
 	_city setVariable ["spawn_more",false];
 	for "_i" from 1 to (2 + round random 3) do {[_city,_radius,(4 + random 3),(random 1)] call btc_fnc_mil_create_group;};
