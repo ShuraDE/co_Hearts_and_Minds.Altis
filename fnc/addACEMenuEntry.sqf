@@ -24,7 +24,9 @@
  _actionMissionRequest = ["MissionRequest", "Request Sidemission", "", {[] spawn btc_fnc_side_request;}, {!btc_side_assigned;}] call ace_interact_menu_fnc_createAction;
  _actionMissionAbort = ["MissionAbort", "Abort Sidemission", "", {[] spawn btc_fnc_side_abort;}, {btc_side_assigned;}] call ace_interact_menu_fnc_createAction;
    
-   
+//CIV ORDERS
+_actionOrderCIVGoDown = ["OrderGoDown", "Civilian go down", "", {btc_int_target = cursorTarget; [2,btc_int_target] spawn btc_fnc_int_orders;}, {true;}] call ace_interact_menu_fnc_createAction;
+_actionOrderCIVGoAway = ["OrderGoAway", "Civilian go away", "", {btc_int_target = cursorTarget; [3,btc_int_target] spawn btc_fnc_int_orders;}, {true;}] call ace_interact_menu_fnc_createAction;
    
 /*
 *  Append Action to Interactionmenü
@@ -36,6 +38,7 @@
 /* CIV and ENEMY in define.sqf definiert */ 
 _TypesForSideMission = ["B_officer_F","B_Soldier_TL_F"];
 _TypesExplosiveBLUFOR = ["B_soldier_exp_F"];
+_TypesAllBLUFOR =["B_officer_F","B_Soldier_TL_F","B_soldier_exp_F","B_Soldier_F","B_soldier_LAT_F","B_soldier_AR_F","B_Soldier_A_F","B_medic_F","B_Helipilot_F"];
 {
 	[_x, 0, ["ACE_MainActions"], _actionIntelSearch] call ace_interact_menu_fnc_addActionToClass;
 }forEach btc_type_units;
@@ -43,6 +46,11 @@ _TypesExplosiveBLUFOR = ["B_soldier_exp_F"];
 {
 	[_x, 0, ["ACE_MainActions"], _actionIntelAsk] call ace_interact_menu_fnc_addActionToClass;
 }forEach btc_civ_type_units;
+
+{
+	[_x, 1, ["ACE_SelfActions"], _actionOrderCIVGoDown] call ace_interact_menu_fnc_addActionToClass;
+	[_x, 1, ["ACE_SelfActions"], _actionOrderCIVGoAway] call ace_interact_menu_fnc_addActionToClass;
+} forEach _TypesAllBLUFOR;
 
 {
 	[_x, 1, ["ACE_SelfActions"], _actionCheckIED] call ace_interact_menu_fnc_addActionToClass;
