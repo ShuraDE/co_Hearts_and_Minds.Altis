@@ -27,7 +27,13 @@
 //CIV ORDERS
 _actionOrderCIVGoDown = ["OrderGoDown", "Civilian go down", "", {btc_int_target = cursorTarget; [2,btc_int_target] spawn btc_fnc_int_orders;}, {true;}] call ace_interact_menu_fnc_createAction;
 _actionOrderCIVGoAway = ["OrderGoAway", "Civilian go away", "", {btc_int_target = cursorTarget; [3,btc_int_target] spawn btc_fnc_int_orders;}, {true;}] call ace_interact_menu_fnc_createAction;
-   
+  
+//FOB Actions
+_actionRequireObject = ["FOBRequireObject","Require Object", "",  {[btc_create_object_point] spawn btc_fnc_log_create}, {true;}] call ace_interact_menu_fnc_createAction;
+[btc_create_object, 0, [],_actionRequireObject] call ace_interact_menu_fnc_addActionToObject;
+
+
+
 /*
 *  Append Action to Interactionmenü
 *  
@@ -61,3 +67,5 @@ _TypesAllBLUFOR =["B_officer_F","B_Soldier_TL_F","B_soldier_exp_F","B_Soldier_F"
 	[_x, 1, ["ACE_SelfActions"], _actionMissionRequest] call ace_interact_menu_fnc_addActionToClass;
 	[_x, 1, ["ACE_SelfActions"], _actionMissionAbort] call ace_interact_menu_fnc_addActionToClass;
 } forEach _TypesForSideMission;
+
+
