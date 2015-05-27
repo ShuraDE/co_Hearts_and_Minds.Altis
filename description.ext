@@ -11,7 +11,7 @@ class Header
 {
 	gameType = COOP;
 	minPlayers = 1;
-	maxPlayers = 22;
+	maxPlayers = 12;
 };
 
 #include "define.h"
@@ -188,3 +188,13 @@ class CfgFunctions
         };
     };
 };  
+
+class ForcedMissionDifficulty
+{
+    access = 2;
+    class Mission1
+    {
+        missionName = "co_Hearts_and_Minds.Altis";
+        difficulty = "Veteran";
+    };
+};
