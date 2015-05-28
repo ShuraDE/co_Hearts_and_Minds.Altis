@@ -455,8 +455,6 @@ btc_lift_HUD_y  = 0.825;// * safezoneH + safezoneY;
 btc_player_side           = west;
 btc_enemy_side            = east;
 
-hint str(_p_en);
-
 switch (true) do 
 {
 	case (_p_en == 0) :
