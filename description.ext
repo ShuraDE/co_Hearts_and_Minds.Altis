@@ -116,8 +116,9 @@ class Params
     {
 	//paramsArray[8]
         title = "Medical system:";
-		values[]={0,1,2}; 
+		//values[]={0,1,2}; 
 		//texts[]={"Disable", "No revive", "Revive"}; 
+		values[]={0}; 
 		texts[]={"Disable"}; 
 		default = 0; 
 	};
@@ -125,8 +126,9 @@ class Params
     {
 	//paramsArray[9]
         title = "Revive time:";
-		values[]={120,180,300,600,9999}; 
+		//values[]={120,180,300,600,9999}; 
 		//texts[]={"2 min", "3 min", "5 min", "10 min", "No limit"}; 
+		values[]={9999}; 
 		texts[]={"by ACE 3"}; 
 		default = 9999; 
 	};
