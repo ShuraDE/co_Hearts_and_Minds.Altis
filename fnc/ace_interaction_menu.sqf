@@ -35,9 +35,9 @@ _actionRequireObject = ["FOBRequireObject","Require Object", "",  {[btc_create_o
 
 
 /*
-*  Append Action to Interactionmenü
+*  Append Action to InteractionmenÃ¼
 *  
-* //TODO: Explosives @ SeltInteractioMenü atm change to spawned IED Object!
+* //TODO: Explosives @ SeltInteractioMenÃ¼ atm change to spawned IED Object!
 */
    
    
