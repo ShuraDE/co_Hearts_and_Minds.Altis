@@ -152,8 +152,9 @@ class Params
     {
 	//paramsArray[12]
         title = "Deafness:";
-		values[]={0,1}; 
+		//values[]={0,1}; 
 		//texts[]={"No","Yes"}; 
+		values[]={0}; 
 		texts[]={"No"}; 
 		default = 0; 
 	};
