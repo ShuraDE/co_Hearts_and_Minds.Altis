@@ -106,9 +106,12 @@ else
 	{
 		[] spawn {waitUntil {!isNull player}; S_INIT = true;}
 	} else {
-		S_INIT = true;  																			// erst wenn Player auf Karte wird init.sqf weitergelden
+		S_INIT = true;  // erst wenn Player auf Karte wird init.sqf weitergelden
 	};
 };
 waitUntil{S_INIT};
 
-call compile preprocessFile "fnc\addACEMenuEntry.sqf";												//Generierung der ACE Menüeinträge
+if(!isServer) {
+	call compile preprocessFile "fnc\ace_interaction_menu.sqf"; //Generierung der ACE Menüeinträge
+	call compile preprocessFile "fnc\gear\def_loadout_ga.sqf"; //laden des default gruppe adler loadouts
+}
