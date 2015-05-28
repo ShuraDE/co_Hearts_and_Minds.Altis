@@ -59,7 +59,7 @@ class Params
     {
 	//paramsArray[1]
         title = "Enemy type:";
-		values[]={0,1}; 
+		values[]={0,1,2,3}; 
 		//texts[]={"Guerrilla (A3)","CAF"}; 
 		texts[]={"Guerrilla (A3)","CAF", "LOP ISTS (Islamic State of Takistan and Sahrani)", "LOP AFR (African Militia)"}; 
 		default = 0; 
