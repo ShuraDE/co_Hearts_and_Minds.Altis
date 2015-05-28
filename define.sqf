@@ -475,7 +475,7 @@ switch (true) do
 		btc_type_gl = ["O_GMG_01_F","O_GMG_01_high_F"];
 		btc_civ_type_units  = ["CAF_AG_ME_CIV","CAF_AG_ME_CIV_02","CAF_AG_ME_CIV_03","CAF_AG_ME_CIV_04"];
 	};
-	case (_p_en == 2 && isClass(configFile >> "cfgVehicles" >> "LOP_ISTS") && isClass(configFile >> "cfgVehicles" >> "LOP_TAK_Civ")) :
+	case (_p_en == 2 && isClass(configFile >> "CfgFactionClasses" >> "LOP_ISTS") && isClass(configFile >> "CfgFactionClasses" >> "LOP_TAK_Civ")) :
 	{
 		btc_type_units            = ["LOP_ISTS_Infantry_TL","LOP_ISTS_Infantry_SL","LOP_ISTS_Infantry_Medic","LOP_ISTS_Infantry_AR","LOP_ISTS_Infantry_AT","LOP_ISTS_Infantry_Marksman","LOP_ISTS_Infantry_Engineer","LOP_ISTS_Soldier","LOP_ISTS_Infantry_GL"];
 		btc_type_crewmen          = "LOP_ISTS_Soldier";
@@ -486,7 +486,7 @@ switch (true) do
 		btc_civ_type_units 		  = ["LOP_Tak_Civ_Man_01","LOP_Tak_Civ_Man_02","LOP_Tak_Civ_Man_03","LOP_Tak_Civ_Man_04"];
 		btc_civ_type_veh    	  = ["LOP_TAK_Civ_Offroad","LOP_TAK_Civ_Hatchback","LOP_TAK_Civ_Landrover","LOP_TAK_Civ_Ural","LOP_TAK_Civ_Ural_open","LOP_TAK_Civ_UAZ","LOP_TAK_Civ_UAZ_Open"];
 	};	
-	case (_p_en == 3 && isClass(configFile >> "cfgVehicles" >> "LOP_AFR") && isClass(configFile >> "cfgVehicles" >> "LOP_AFR_Civ")) :
+	case (_p_en == 3 && isClass(configFile >> "CfgFactionClasses" >> "LOP_AFR") && isClass(configFile >> "CfgFactionClasses" >> "LOP_AFR_Civ")) :
 	{
 		btc_type_units            = ["LOP_AFR_Infantry_TL","LOP_AFR_Infantry_SL","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_Marksman","LOP_AFR_Infantry_IED","LOP_AFR_Infantry","LOP_AFR_Driver","LOP_AFR_Infantry_GL"];
 		btc_type_crewmen          = "LOP_AFR_Driver";
