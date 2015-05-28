@@ -42,7 +42,7 @@ switch (typeOf player) do {
 		player addPrimaryWeaponItem "SMA_supp2b_556";
 		player addPrimaryWeaponItem "FHQ_acc_LLM01L";
 		player addPrimaryWeaponItem "SMA_eotech552_3XDOWN";
-	}
+	};
 	case "B_soldier_LAT_F" : {
 	  //Rifleman (AT)
 		player forceAddUniform "ARC_GER_Tropentarn_Uniform";
@@ -63,7 +63,7 @@ switch (typeOf player) do {
 		player addItemToBackpack "ACE_NVG_Wide";
 		player addHeadgear "ARC_GER_Tropentarn_Mich";
 		player addWeapon "SMA_HK416afg";		
-	}
+	};
 	case "B_soldier_AR_F" : {
 	  //Autorifleman
 		player forceAddUniform "ARC_GER_Tropentarn_Uniform";
@@ -91,7 +91,7 @@ switch (typeOf player) do {
 		player addPrimaryWeaponItem "FHQ_acc_LLM01F";
 		player addPrimaryWeaponItem "SMA_eotech552_3XDOWN";
 		player addPrimaryWeaponItem "bipod_01_F_snd";	
-	}
+	};
 	case "B_Soldier_A_F" : {
 	  //Ammo Bearer
 		player forceAddUniform "ARC_GER_Tropentarn_Uniform";
@@ -113,7 +113,7 @@ switch (typeOf player) do {
 		player addItemToBackpack "ACE_NVG_Wide";
 		player addHeadgear "ARC_GER_Tropentarn_Mich";
 		player addWeapon "SMA_HK416afg";
-	}
+	};
 	case "B_soldier_exp_F" : {
 	  //Explosive Specialist
 		player forceAddUniform "ARC_GER_Tropentarn_Uniform";
@@ -135,8 +135,8 @@ switch (typeOf player) do {
 		player addItemToBackpack "ACE_NVG_Wide";
 		player addHeadgear "ARC_GER_Tropentarn_Mich";	
 		player addWeapon "SMA_HK416afg";		
-	}
-	default : {
+	};
+	default {
 		player forceAddUniform "ARC_GER_Tropentarn_Uniform";
 		player addItemToUniform "ACE_MapTools";
 		player addItemToUniform "ACE_EarPlugs";
@@ -155,6 +155,6 @@ switch (typeOf player) do {
 		player addItemToBackpack "ACE_NVG_Wide";
 		player addHeadgear "ARC_GER_Tropentarn_Mich";
 		player addWeapon "SMA_HK416afg";		
-	}
+	};
 }
 

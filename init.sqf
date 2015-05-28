@@ -111,7 +111,6 @@ else
 };
 waitUntil{S_INIT};
 
-if(!isServer) {
-	call compile preprocessFile "fnc\ace_interaction_menu.sqf"; //Generierung der ACE Menüeinträge
-	call compile preprocessFile "fnc\gear\def_loadout_ga.sqf"; //laden des default gruppe adler loadouts
-}
+call compile preprocessFile "fnc\ace_interaction_menu.sqf"; //Generierung der ACE Menüeinträge
+call compile preprocessFile "fnc\gear\def_loadout_ga.sqf"; //laden des default gruppe adler loadouts
+

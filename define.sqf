@@ -454,6 +454,9 @@ btc_lift_HUD_y  = 0.825;// * safezoneH + safezoneY;
 //Mil
 btc_player_side           = west;
 btc_enemy_side            = east;
+
+hint str(_p_en);
+
 switch (true) do 
 {
 	case (_p_en == 0) :
@@ -480,9 +483,9 @@ switch (true) do
 		btc_type_units            = ["LOP_ISTS_Infantry_TL","LOP_ISTS_Infantry_SL","LOP_ISTS_Infantry_Medic","LOP_ISTS_Infantry_AR","LOP_ISTS_Infantry_AT","LOP_ISTS_Infantry_Marksman","LOP_ISTS_Infantry_Engineer","LOP_ISTS_Soldier","LOP_ISTS_Infantry_GL"];
 		btc_type_crewmen          = "LOP_ISTS_Soldier";
 		btc_type_vehicles         = ["LOP_ISTS_Landrover_M2","LOP_ISTS_Offroad_M2"];
-		btc_type_motorized        = ["LOP_ISTS_Landrover","LOP_ISTS_Landrover_M2","LOP_ISTS_Offroad","LOP_ISTS_Offroad_M2","LOP_ISTS_Truck","LOP_ISTS_M113_W","LOP_ISTS_BTR60","LOP_TAK_Civ_Ural","LOP_TAK_Civ_Ural_open","LOP_TAK_Civ_UAZ","LOP_TAK_Civ_UAZ_Open"]];
-		btc_type_mg 			  = ["LOP_ISTS_Static_M2","LOP_ISTS_Static_M2_MiniTripod",];
-		btc_type_gl 			  = ["LOP_ISTS_Static_Mk19_TriPod"];
+		btc_type_motorized        = ["LOP_ISTS_Landrover","LOP_ISTS_Landrover_M2","LOP_ISTS_Offroad","LOP_ISTS_Offroad_M2","LOP_ISTS_Truck","LOP_ISTS_M113_W","LOP_ISTS_BTR60","LOP_TAK_Civ_Ural","LOP_TAK_Civ_Ural_open","LOP_TAK_Civ_UAZ","LOP_TAK_Civ_UAZ_Open"];
+		btc_type_mg = ["LOP_ISTS_Static_M2","LOP_ISTS_Static_M2_MiniTripod"];
+		btc_type_gl = ["LOP_ISTS_Static_Mk19_TriPod"];
 		btc_civ_type_units 		  = ["LOP_Tak_Civ_Man_01","LOP_Tak_Civ_Man_02","LOP_Tak_Civ_Man_03","LOP_Tak_Civ_Man_04"];
 		btc_civ_type_veh    	  = ["LOP_TAK_Civ_Offroad","LOP_TAK_Civ_Hatchback","LOP_TAK_Civ_Landrover","LOP_TAK_Civ_Ural","LOP_TAK_Civ_Ural_open","LOP_TAK_Civ_UAZ","LOP_TAK_Civ_UAZ_Open"];
 	};	
@@ -490,8 +493,8 @@ switch (true) do
 	{
 		btc_type_units            = ["LOP_AFR_Infantry_TL","LOP_AFR_Infantry_SL","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_Marksman","LOP_AFR_Infantry_IED","LOP_AFR_Infantry","LOP_AFR_Driver","LOP_AFR_Infantry_GL"];
 		btc_type_crewmen          = "LOP_AFR_Driver";
-		btc_type_vehicles         = "LOP_AFR_Landrover_M2","LOP_AFR_Offroad_M2",];
-		btc_type_motorized        = ["LOP_AFR_BTR60","LOP_AFR_M113_W","LOP_AFR_Landrover","LOP_AFR_Landrover_M2","LOP_AFR_Offroad_M2","LOP_AFR_Offroad","LOP_AFR_Truck","LOP_AFR_Civ_Ural","LOP_AFR_Civ_Ural_open","LOP_AFR_Civ_UAZ","LOP_AFR_Civ_Landrover","LOP_AFR_Civ_UAZ_Open"]];
+		btc_type_vehicles         = ["LOP_AFR_Landrover_M2","LOP_AFR_Offroad_M2"];
+		btc_type_motorized        = ["LOP_AFR_BTR60","LOP_AFR_M113_W","LOP_AFR_Landrover","LOP_AFR_Landrover_M2","LOP_AFR_Offroad_M2","LOP_AFR_Offroad","LOP_AFR_Truck","LOP_AFR_Civ_Ural","LOP_AFR_Civ_Ural_open","LOP_AFR_Civ_UAZ","LOP_AFR_Civ_Landrover","LOP_AFR_Civ_UAZ_Open"];
 		btc_type_mg = ["O_HMG_01_F","O_HMG_01_high_F"];
 		btc_type_gl = ["O_GMG_01_F","O_GMG_01_high_F"];
 		btc_civ_type_units 		  = ["LOP_AFR_Civ_Man_01","LOP_AFR_Civ_Man_02","LOP_AFR_Civ_Man_03","LOP_AFR_Civ_Man_04"];
