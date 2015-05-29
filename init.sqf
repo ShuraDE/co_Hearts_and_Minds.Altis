@@ -4,8 +4,8 @@ call compile preprocessFile "define.sqf";
 call compile preprocessFile "define_mod.sqf";
 call compile preprocessFile "fnc\compile.sqf";
 
-VABox1 addaction ["Open Virtual Arsenal", "fnc\gear\def_loadout_ga.sqf"];
-btc_gear_object addaction ["Open Virtual Arsenal", "fnc\gear\def_loadout_ga.sqf"];
+VABox1 addaction ["Open Virtual Arsenal", "fnc\gear\virtual_ammo_box.sqf"];
+btc_gear_object addaction ["Open Virtual Arsenal", "fnc\gear\virtual_ammo_box.sqf"];
 
 if (isServer) then 
 {
