@@ -6,8 +6,10 @@ waitUntil {!(isNil "btc_int_action_result")};
 
 if (btc_int_action_result) then
 {
-	_ratio = 40;
-	if (player call btc_fnc_is_engineer) then {_ratio = 95;};
+	_ratio = 30;
+	if (player call btc_fnc_is_engineer) then {_ratio = 85;};
+	if ("ACE_DefusalKit" in Items player) then {_ratio = _ratio + 10;};	
+	
 	if (random 100 > _ratio) then {[_ied,"btc_fnc_ied_boom",false] spawn BIS_fnc_MP;} else
 	{
 		hint "IED disarmed!";
