@@ -108,6 +108,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					description="Explosive Specialist";
+					init="this setVariable [""btc_isEngineer"",true]";
 					syncId=2;
 					synchronizations[]={0};
 				};
@@ -122,6 +123,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					description="Explosive Specialist";
+					init="this setVariable [""btc_isEngineer"",true]";
 					syncId=3;
 					synchronizations[]={0,3};
 				};
