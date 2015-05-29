@@ -61,7 +61,7 @@ _TypesAllBLUFOR =["B_officer_F","B_Soldier_TL_F","B_soldier_exp_F","B_Soldier_F"
 {
 	[_x, 1, ["ACE_SelfActions"], _actionCheckIED] call ace_interact_menu_fnc_addActionToClass;
 	[_x, 1, ["ACE_SelfActions"], _actionDisarmIED] call ace_interact_menu_fnc_addActionToClass;
-} forEach _TypesExplosiveBLUFOR;
+} forEach _TypesAllBLUFOR;
 
 {
 	[_x, 1, ["ACE_SelfActions"], _actionMissionRequest] call ace_interact_menu_fnc_addActionToClass;
