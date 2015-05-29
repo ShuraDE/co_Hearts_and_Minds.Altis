@@ -6,9 +6,12 @@ waitUntil {!(isNil "btc_int_action_result")};
 
 if (btc_int_action_result) then
 {
-	_ratio = 30;
-	if (player call btc_fnc_is_engineer) then {_ratio = 85;};
-	if ("ACE_DefusalKit" in Items player) then {_ratio = _ratio + 10;};	
+	_ratio = 20;
+	if (player call btc_fnc_is_engineer) then {_ratio = 75;};
+	if ("ACE_DefusalKit" in Items player) then {_ratio = _ratio + 20;};	
+	
+	if (btc_debug) then {player sideChat format ["IED disarm with %1",_ratio];};
+	if (btc_debug_log) then {diag_log format ["IED disarm with %1",_ratio];};	
 	
 	if (random 100 > _ratio) then {[_ied,"btc_fnc_ied_boom",false] spawn BIS_fnc_MP;} else
 	{
