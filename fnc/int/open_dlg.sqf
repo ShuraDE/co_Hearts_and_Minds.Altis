@@ -213,7 +213,7 @@ switch (_this) do
 			if (!isNull btc_log_object_selected) then 
 			{
 				(_ui displayCtrl 9993) ctrlShow true;
-				(_ui displayCtrl 9993) ctrlSetText format ["Load %1 in %2",getText (configFile >> "cfgVehicles" >> typeof btc_log_object_selected >> "displayName"),getText (configFile >> "cfgVehicles" >> typeof btc_int_target >> "displayName")];
+				(_ui displayCtrl 9993) ctrlSetText format ["Load %1 in %2",getText (configFile >> "cfgVehicles" >> typeOf btc_log_object_selected >> "displayName"),getText (configFile >> "cfgVehicles" >> typeof btc_int_target >> "displayName")];
 				(_ui displayCtrl 9993) buttonSetAction "[] spawn btc_fnc_log_load";
 				if (btc_log_object_selected distance btc_int_target > btc_log_max_distance_load) then {(_ui displayCtrl 9993) ctrlEnable false;};
 			};
@@ -266,12 +266,12 @@ switch (_this) do
 			(_ui displayCtrl 9994) ctrlShow true;
 			(_ui displayCtrl 9994) ctrlSetText "Mount FOB";
 			(_ui displayCtrl 9994) buttonSetAction "btc_int_target spawn btc_fnc_fob_create";
-			if (count ((position btc_int_target) isflatempty [1,0,0.5,1,0,false,btc_int_target]) == 0 || btc_int_target distance (getMarkerPos "btc_base") < 2500) then {(_ui displayCtrl 9994) ctrlEnable false;};
+			if (count ((position btc_int_target) isFlatEmpty [1,0,0.5,1,0,false,btc_int_target]) == 0 || btc_int_target distance (getMarkerPos "btc_base") < 2500) then {(_ui displayCtrl 9994) ctrlEnable false;};
 		};
 	};
 	case 9 :
 	{
-		{(_ui displayCtrl _x) ctrlShow false;} foreach [9993,9994,9995,9996];
+		{(_ui displayCtrl _x) ctrlShow false;} forEach [9993,9994,9995,9996];
 		(_ui displayCtrl 9991) ctrlSetText "Require object";
 		(_ui displayCtrl 9991) buttonSetAction "[btc_create_object_point] spawn btc_fnc_log_create";
 		
@@ -280,13 +280,13 @@ switch (_this) do
 	};
 	case 10 :
 	{
-		{(_ui displayCtrl _x) ctrlShow false;} foreach [9992,9993,9994,9995,9996];
+		{(_ui displayCtrl _x) ctrlShow false;} forEach [9992,9993,9994,9995,9996];
 		(_ui displayCtrl 9991) ctrlSetText "Gear";
 		(_ui displayCtrl 9991) buttonSetAction "[] spawn btc_fnc_gear_open_dlg";
 	};
 	case 11 :
 	{
-		{(_ui displayCtrl _x) ctrlShow false;} foreach [9992,9993,9994,9995,9996];
+		{(_ui displayCtrl _x) ctrlShow false;} forEach [9992,9993,9994,9995,9996];
 		(_ui displayCtrl 9991) ctrlSetText "Re-deploy";
 		(_ui displayCtrl 9991) buttonSetAction "[] spawn btc_fnc_fob_redeploy";
 		//if (!btc_p_redeploy_base && {btc_int_target distance (getMarkerPos "btc_base") > 200}) then {(_ui displayCtrl 9991) ctrlEnable false;};
